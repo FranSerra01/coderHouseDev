@@ -1,0 +1,174 @@
+/*=============================== MEDIA QUERY ZONE =====================================*/
+
+/*----------- MEDIA Q (860px)------------*/
+@media only screen and (max-width: 860px) {
+
+    
+    /* Nav */
+    nav ul {
+        position: absolute;
+        width: 100%;
+        background: #000000;
+        left: 0;
+        top: 100%;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul.show-menu {
+        max-height: 200px;
+    }
+
+    nav ul li a {
+        color: white; // Ensure link color is white
+        
+        &:hover, 
+        &:focus, 
+        &:active, 
+        &:visited {
+            color: white; // Ensure link color remains white on hover, focus, active, and visited states
+        }
+        
+        &::after {
+            background: white; // Ensure underline color is white
+        }
+    }
+
+    .btnNav {
+        display: none;
+    }
+
+    nav .logo {
+        width: 150px;
+    }
+
+    nav ul li {
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    .menuIcon {
+        display: block;
+        width: 50px;
+    }
+
+    .show-menu {
+        max-height: 200px;
+    }
+
+    /* Footer */
+    .footerContainer {
+        padding: 50px 20px 10px;
+    
+        .socialIcons {
+            align-items: center;
+          a {
+            padding: 5px;
+            margin: 5px;
+    
+            i {
+              font-size: 1.5em;
+            }
+          }
+        }
+    
+        .footerNav {
+          margin: 20px 0;
+    
+          ul {
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+    
+            li {
+              a {
+                margin: 10px 0;
+                font-size: 1em;
+              }
+            }
+          }
+        }
+    }
+
+    .header {
+        height: 100%;
+        padding: 0;
+    }
+
+    .userImg {
+        width: 100%;
+        height: auto;
+        right: 0;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .headerContent {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 0;
+        z-index: 2;
+        padding-bottom: 30px;
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnContainer {
+        margin: 5px 0;
+    }
+
+    .header button {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .btnDark {
+        padding: 7px 7px 7px 20px;
+        margin-bottom: 10px;
+    }
+
+    .btn-dark img {
+        width: 30px;
+        padding: 5px;
+        margin-left: 15px;
+    }
+
+    .indexTitle {
+        position: relative;
+    }
+
+    #proyects .item {
+        flex-direction: column;
+
+        .left {
+            width: 100%;
+        }
+
+        .right {
+            width: 90%;
+            margin-left: 0;
+            margin-top: -70px;
+        }
+    }
+
+    #proyects .item:nth-child(even) {
+        flex-direction: column;
+
+        .left {
+            margin-left: 0;
+        }
+    }
+    
+}
+
+
+
+
+  

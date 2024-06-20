@@ -1,0 +1,54 @@
+.formArea {
+  
+  
+  .leftC {
+    flex: 1; /* Ocupa todo el espacio restante */
+    background: #e4a4a4;
+    padding: 250px 98px;
+  
+    h2 {
+      display: flex;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 60px;
+    }
+  }
+  
+  .rightC {
+    flex: 1; /* Ocupa todo el espacio restante */
+    padding: 70px 100px;
+    position: relative; /* Cambiado a relative para ajustar elementos hijos */
+  
+    i {
+      position: absolute;
+      font-size: 80px;
+      left: -27px;
+      top: 40%;
+      color: white;
+    }
+  
+    .form-control {
+      border: 2px solid black;
+      width: 100%; /* Ajusta el ancho del control de formulario al 100% */
+      box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+      padding: 10px; /* Ajusta el padding según sea necesario */
+      margin-top: 20px;
+    }
+  
+    button {
+      border: none;
+      border-radius: 0;
+      background: #252525;
+      width: 180px;
+      color: white;
+      padding: 15px 0;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+  

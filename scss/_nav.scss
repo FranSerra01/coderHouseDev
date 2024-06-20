@@ -1,0 +1,67 @@
+$nav-background-color: white;
+$nav-border-color: #000;
+$link-color: #000;
+$hover-underline-color: #000;
+
+//================ NAV BAR ===================//
+
+nav {
+  background-color: $nav-background-color;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10%;
+  border-bottom: 1px solid $nav-border-color;
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      display: inline-block;
+      margin: 10px 20px;
+      font-weight: 500;
+      cursor: pointer;
+      
+      a {
+        text-decoration: none;
+        color: $link-color;
+        position: relative;
+        
+        &::after {
+          content: '';
+          width: 0;
+          height: 3px;
+          background: $hover-underline-color;
+          position: absolute;
+          left: 0;
+          bottom: -6px;
+          transition: width 0.3s ease-in-out;
+        }
+        
+        &:hover {
+          color: $link-color; // Ensure link color stays the same on hover
+          
+          &::after {
+            width: 100%;
+          }
+        }
+        
+        &:visited, &:link, &:active {
+          color: $link-color; // Ensure link color stays the same for visited, link, and active states
+        }
+      }
+    }
+  }
+  
+  .logo {
+    width: 120px;
+    cursor: pointer;
+  }
+}
+
