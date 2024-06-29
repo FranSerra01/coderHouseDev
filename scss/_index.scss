@@ -41,6 +41,11 @@
     color: #fff;
     padding: 10px 10px 10px 30px;
     border-radius: 40px;
+    transition: ease 0.3s;
+
+    &:hover{
+        transform: scale(0.9);
+    }
 
     img {
         width: 40px;
@@ -54,6 +59,11 @@
 .btnLight {
     background: transparent;
     text-decoration: underline;
+    transition: ease 0.3s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 
     img {
         width: 20px;
@@ -127,11 +137,22 @@
 
 #proyects {
     padding: 10rem 0;
+    padding-bottom: 0;
 
     h2 {
         display: flex;
         justify-content: center;
         margin-bottom: 100px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    h3 {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 100px;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 
     .allItems {
@@ -192,13 +213,14 @@
             z-index: 2;
 
             .proyectTitle {
-                font-size: 1.5rem;
+                font-size: 2rem;
                 margin-bottom: 1rem;
             }
-
+            
             .proyectSub {
                 font-size: 1rem;
                 margin-bottom: 1rem;
+                text-transform: uppercase;
             }
 
             .projectDescript {
@@ -227,6 +249,11 @@
     padding: 10px;
     margin: 10px 10px 10px 0px;
     border-radius: 40px;
+    transition: ease 0.3s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 
     a {
         width: 100%;
@@ -245,6 +272,10 @@
 
 .imgPH{
     height: 100%;
+}
+
+.marcas{
+    margin-bottom: 100px;
 }
 
 

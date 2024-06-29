@@ -1,6 +1,5 @@
 .formArea {
   
-  
   .leftC {
     flex: 1; /* Ocupa todo el espacio restante */
     background: #e4a4a4;
@@ -19,7 +18,7 @@
     flex: 1; /* Ocupa todo el espacio restante */
     padding: 70px 100px;
     position: relative; /* Cambiado a relative para ajustar elementos hijos */
-  
+    
     i {
       position: absolute;
       font-size: 80px;
@@ -27,7 +26,7 @@
       top: 40%;
       color: white;
     }
-  
+    
     .form-control {
       border: 2px solid black;
       width: 100%; /* Ajusta el ancho del control de formulario al 100% */
@@ -35,7 +34,7 @@
       padding: 10px; /* Ajusta el padding según sea necesario */
       margin-top: 20px;
     }
-  
+    
     button {
       border: none;
       border-radius: 0;
